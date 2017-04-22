@@ -5,3 +5,26 @@
 .features p{
   text-align: center;
 }
+
+
+.telefono{
+  display:flex;
+  width: 200px;
+  height: 400px;
+}
+
+.iconos{
+  display:inline-block;
+  font-size: 60px;
+  color: purple;
+  padding:0;
+}
+
+div li{
+  margin: auto;
+  display: inline-block;
+
+}
+/* hacer un div y colocar la lista dentro, (la imagen es una caja)
+darle display:inline-block a la caja y a la lista para q queden uno al lado del otro.
+darle width 2(?) a los iconos para que queden uno debajo del otro.
