@@ -1,3 +1,7 @@
 section.inicial{
   background-color: red;
 }
+section.inicial article{
+
+  font-size: 30px;
+}
