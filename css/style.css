@@ -1,23 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section.barra {
+  width: 100%;
+
+  background-color: black;
+  position: fixed;
+}
+section.barra nav li {
+   margin: auto;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
 section.inicial{
-  background-color: red;
+  margin-left: auto;
+  padding-left: 20px;
+  background: linear-gradient(to right, rgba(250,23,87,1) 0%, rgba(95,15,214,1) 100%);
 }
 
 section.inicial article{
   font-size: 30px;
-}
-
-.downloads {
-    background-color: #ffe900;
-}
-
-.started {
-    background-color: black;
-}
-
-.social {
-    background-color: #ffe900;
-}
-
-.footer {
-    background-color: black;
 }
