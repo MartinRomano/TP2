@@ -1,3 +1,19 @@
 section.inicial{
   background-color: red;
 }
+
+.downloads {
+    background-color: #ffe900;
+}
+
+.started {
+    background-color: black;
+}
+
+.social {
+    background-color: #ffe900;
+}
+
+.footer {
+    background-color: black;
+}
