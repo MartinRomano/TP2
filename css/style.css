@@ -8,23 +8,46 @@
 
 
 .telefono{
-  display:flex;
+  display:inline-block;
   width: 200px;
   height: 400px;
 }
 
-.iconos{
+.ion-iphone{
   display:inline-block;
   font-size: 60px;
   color: purple;
-  padding:0;
+  width:2%;
+  text-align: center;
 }
 
-div li{
-  margin: auto;
-  display: inline-block;
-
+.ion-camera{
+  display:inline-block;
+  font-size: 60px;
+  color: purple;
+  width:2%;
+  text-align: center;
 }
-/* hacer un div y colocar la lista dentro, (la imagen es una caja)
-darle display:inline-block a la caja y a la lista para q queden uno al lado del otro.
-darle width 2(?) a los iconos para que queden uno debajo del otro.
+
+.ion-cube{
+  display:inline-block;
+  font-size: 60px;
+  color: purple;
+  width:2%;
+  text-align: center;
+}
+
+.ion-unlocked{
+  display:inline-block;
+  font-size: 60px;
+  color: purple;
+  width:2%;
+  text-align: center;
+}
+
+.test{
+  display:inline-block;
+  width: 20%;
+  padding: 2%;
+  margin: 6%;
+}
