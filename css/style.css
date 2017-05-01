@@ -1,30 +1,114 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
-section.barra {
-  width: 100%;
-
-  background-color: black;
-  position: fixed;
-}
-section.barra nav li {
-   margin: auto;
-    display: inline-block;
-    font-weight: bold;
-    color: white;
+/* body */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #f2f2f2;
+	font-size: 12px;
     text-decoration: none;
-  }
+}
+/* Navegación Fijada*/
+#main-header {
+	color: white;
+	height: 80px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+/* Logo Barra*/
+#logo-header {
+	float: left;
+	padding: 20px 0 0 20px;
+	text-decoration: none;
+    font-weight: 500;
+    color: white;
+    opacity: 0.5;
+}
+	#logo-header:hover {
+		color: #cfcaca;
+	}
 
-section.inicial{
-  margin-left: auto;
-  padding-left: 20px;
-  background: linear-gradient(to right, rgba(250,23,87,1) 0%, rgba(95,15,214,1) 100%);
+	#logo-header .site-name {
+		display: block;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+/* Navegación Menu */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 50px;
+		}
+
+			nav ul li a {
+                color: white;
+                opacity: 0.5;
+				display: block;/*los pongo en bloque*/
+				padding: 0 10px;/*separo los menus*/
+				text-decoration: none;
+			}
+
+				nav ul li a:hover {
+					color: #cfcaca;
+				}
+/* Fondo seccion inicial */
+.inicial{
+    overflow: hidden;/*oculto debajo de la section generando un crop*/
+    height: 500px;
+    padding-top: 10%;
+    background:  linear-gradient( to right, rgba(250,22,22,1) 20%,
+                    rgba(95,15,214,1) 100%);
+}
+.mosaico{
+    background-color: #3E69C3;
+    background-image: url('imagenes/fondo.png');
+    background-size: 500px;
+}
+/* texto seccion inicial */
+section.inicial div.inicial-texto{
+    display: inline-block;
+    float: left;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-left: 5%;
+}
+/*boton  seccion inicial*/
+button {
+    margin-left: 5%;
+    outline:none;
+    height: 40px;
+    width: 220px;
+    text-align: center;
+    border-radius:40px;
+    background: rgba(255,255,255,0);
+    border: 2px solid;
+    color:white;
+    letter-spacing:1px;
+    font-size: 11px;
+    cursor: pointer;
 }
 
-section.inicial article{
-  font-size: 30px;
+/*imagen cortada de seccion inicial*/
+section.inicial div.crop{
+    display: inline-block;
+    float: right;
+    position: relative;/*posicion relativa para que este dentro del div*/
+    bottom: 150px;
+    right: 50px;
 }
