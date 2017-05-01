@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	background: #f2f2f2;
-	font-size: 12px;
+	font-size: 11px;
     text-decoration: none;
 }
 /* Navegación Fijada*/
@@ -29,6 +29,7 @@ body {
     font-weight: 500;
     color: white;
     opacity: 0.5;
+    transition-duration: .4s;
 }
 	#logo-header:hover {
 		color: #cfcaca;
@@ -61,6 +62,7 @@ nav {
 				display: block;/*los pongo en bloque*/
 				padding: 0 10px;/*separo los menus*/
 				text-decoration: none;
+                transition-duration: .4s;
 			}
 
 				nav ul li a:hover {
@@ -70,23 +72,30 @@ nav {
 .inicial{
     overflow: hidden;/*oculto debajo de la section generando un crop*/
     height: 500px;
-    padding-top: 10%;
-    background:  linear-gradient( to right, rgba(250,22,22,1) 20%,
-                    rgba(95,15,214,1) 100%);
+    padding-top: 60px;
+    background:
+        linear-gradient( to right, rgba(250,22,22,1) 20%, rgba(95,15,214,1) 100%),
+        url('../imagenes/fondo.png');
+      background-blend-mode: screen, difference;
+      background-repeat: repeat;
 }
-.mosaico{
-    background-color: #3E69C3;
-    background-image: url('imagenes/fondo.png');
-    background-size: 500px;
-}
+
 /* texto seccion inicial */
 section.inicial div.inicial-texto{
     display: inline-block;
     float: left;
+    letter-spacing: 1px;
     color: white;
-    font-family: sans-serif;
-    font-size: 40px;
+    font-family: Verdana;
+    font-size: 33px;
     margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 10px;
+
+}
+section.inicial div.btn{
+    display: inline-block;
+    width: 100%;
 }
 /*boton  seccion inicial*/
 button {
@@ -97,11 +106,18 @@ button {
     text-align: center;
     border-radius:40px;
     background: rgba(255,255,255,0);
-    border: 2px solid;
+    border: 1px solid;
     color:white;
     letter-spacing:1px;
     font-size: 11px;
     cursor: pointer;
+    margin-top: 2%;
+    transition-duration: .4s;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
 }
 
 /*imagen cortada de seccion inicial*/
@@ -109,6 +125,11 @@ section.inicial div.crop{
     display: inline-block;
     float: right;
     position: relative;/*posicion relativa para que este dentro del div*/
-    bottom: 150px;
     right: 50px;
+    top: -228px;
+}
+section.yellow{
+    background: rgba(214,176,61,1);
+    width: 100%;
+    height: 400px;
 }
