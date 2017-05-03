@@ -6,18 +6,166 @@ section.inicial article{
   font-size: 30px;
 }
 
+/* CSS - INICIO - Mariana */
 .downloads {
-    background-color: #ffe900;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #EDCD3A;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    margin-left: 0;
+    width: 100%;
+}
+
+.title_downloads {
+    font-size: 46px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    width: 33%;
+    text-align: center;
+}
+
+.subtitle_downloads {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.images_downloads {
+  margin-top: 0;
+  margin-bottom: 150px;
 }
 
 .started {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("../imagenes/usuario.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    width: 100%;
+}
+
+#btn_name_started {
+  margin-left: 60px;
+  margin-bottom: 200px;
+  background: none;
+  color: #F5F5F5;
+  border-color: #F5F5F5;
+  border-radius: 20px;
+  height: 40px;
+  width: 250px;
+}
+
+.text_started {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  font-size: 70px;
 }
 
 .social {
-    background-color: #ffe900;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDCD3A;
+    align-items: center;
+}
+
+.text_social {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.icons_socials {
+    margin-bottom: 100px;
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
+    font-size: 20px;
 }
+
+.text_footer {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #696969;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.menu_footer a {
+  text-decoration: none;
+  color: #696969;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+}
+
+.nav_li_footer {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+
+.nav_footer {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .title_downloads {
+    width: 100%;
+  }
+
+  .images_downloads {
+    text-align: center;
+  }
+
+  .text_started {
+    margin-left: 30px;
+    font-size: 50px;
+  }
+
+  #btn_name_started {
+    margin-left: 30px;
+    width: 200px;
+  }
+
+  .text_social {
+      text-align: center;
+  }
+
+  .icons_socials a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .text_footer {
+    text-align: center;
+  }
+
+  .nav_footer {
+    text-align: center;
+  }
+}
+
+/* CSS - FINAL - Mariana */
