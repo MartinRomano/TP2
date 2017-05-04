@@ -1,4 +1,13 @@
-.features h3{
+<<<<<<< HEAD
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+ul{
+  list-style:none
+}
+.features h1{
   text-align: center;
 }
 
@@ -21,7 +30,7 @@
   text-align: center;
 }
 
-.ion-camera{
+.ion-ios-camera-outline{
   display:inline-block;
   font-size: 60px;
   color: purple;
@@ -29,7 +38,7 @@
   text-align: center;
 }
 
-.ion-cube{
+.ion-ios-box-outline{
   display:inline-block;
   font-size: 60px;
   color: purple;
@@ -37,7 +46,7 @@
   text-align: center;
 }
 
-.ion-unlocked{
+.ion-ios-unlocked-outline{
   display:inline-block;
   font-size: 60px;
   color: purple;
@@ -55,3 +64,312 @@
 p{
   display:block;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #f2f2f2;
+	font-size: 11px;
+    text-decoration: none;
+}
+/* Navegación Fijada*/
+#main-header {
+	color: white;
+	height: 80px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+/* Logo Barra*/
+#logo-header {
+	float: left;
+	padding: 20px 0 0 20px;
+	text-decoration: none;
+    font-weight: 500;
+    color: white;
+    opacity: 0.5;
+    transition-duration: .4s;
+}
+	#logo-header:hover {
+		color: #cfcaca;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+/* Navegación Menu */
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 50px;
+		}
+
+			nav ul li a {
+                color: white;
+                opacity: 0.5;
+				display: block;/*los pongo en bloque*/
+				padding: 0 10px;/*separo los menus*/
+				text-decoration: none;
+                transition-duration: .4s;
+			}
+
+				nav ul li a:hover {
+					color: #cfcaca;
+				}
+/* Fondo seccion inicial */
+.inicial{
+    overflow: hidden;/*oculto debajo de la section generando un crop*/
+    height: 500px;
+    padding-top: 60px;
+    background:
+        linear-gradient( to right, rgba(250,22,22,1) 20%, rgba(95,15,214,1) 100%),
+        url('../imagenes/fondo.png');
+      background-blend-mode: screen, difference;
+      background-repeat: repeat;
+}
+
+/* texto seccion inicial */
+section.inicial div.inicial-texto{
+    display: inline-block;
+    float: left;
+    letter-spacing: 1px;
+    color: white;
+    font-family: Verdana;
+    font-size: 33px;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 10px;
+
+}
+section.inicial div.btn{
+    display: inline-block;
+    width: 100%;
+}
+/*boton  seccion inicial*/
+button {
+    margin-left: 5%;
+    outline:none;
+    height: 40px;
+    width: 220px;
+    text-align: center;
+    border-radius:40px;
+    background: rgba(255,255,255,0);
+    border: 1px solid;
+    color:white;
+    letter-spacing:1px;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 2%;
+    transition-duration: .4s;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+}
+
+/*imagen cortada de seccion inicial*/
+section.inicial div.crop{
+    display: inline-block;
+    float: right;
+    position: relative;/*posicion relativa para que este dentro del div*/
+    right: 50px;
+    top: -228px;
+}
+
+/*section.yellow{
+    background: rgba(214,176,61,1);
+    width: 100%;
+    height: 400px;
+} /*
+
+/* CSS - INICIO - Mariana */
+.downloads {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDCD3A;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+.title_downloads {
+    font-size: 46px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    width: 33%;
+    color: 	#F5F5F5;
+    text-align: center;
+
+}
+
+.subtitle_downloads {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    color: 	#F5F5F5;
+}
+
+.images_downloads {
+  margin-top: 0;
+  margin-bottom: 150px;
+}
+
+.started {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("../imagenes/usuario.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    width: 100%;
+}
+
+#btn_name_started {
+  margin-left: 60px;
+  margin-bottom: 200px;
+  background: none;
+  color: #F5F5F5;
+  border-color: #F5F5F5;
+  border-radius: 20px;
+  height: 40px;
+  width: 250px;
+}
+
+.text_started {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  font-size: 70px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDCD3A;
+    align-items: center;
+}
+
+.text_social {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: 	#F5F5F5;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.icons_socials {
+    margin-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 20px;
+}
+
+.text_footer {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #696969;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.menu_footer a {
+  text-decoration: none;
+
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+}
+
+.nav_li_footer {
+  display: inline-block;
+  list-style: none;
+  color: #696969;
+  margin: 0 20px;
+}
+
+.nav_footer {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .title_downloads {
+    width: 100%;
+  }
+
+  .images_downloads {
+    text-align: center;
+  }
+
+  .text_started {
+    margin-left: 30px;
+    font-size: 50px;
+  }
+
+  #btn_name_started {
+    margin-left: 30px;
+    width: 200px;
+  }
+
+  .text_social {
+      text-align: center;
+  }
+
+  .icons_socials a img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .text_footer {
+    text-align: center;
+  }
+
+  .nav_footer {
+    text-align: center;
+  }
+}
+
+/* CSS - FINAL - Mariana */
+>>>>>>> refs/remotes/origin/dev
